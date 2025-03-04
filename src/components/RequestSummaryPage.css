@@ -1,0 +1,100 @@
+/* ปรับแต่งตาราง */
+.ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* การจัดสไตล์ให้กับหัวตาราง */
+.ant-table-thead > tr > th {
+  background-color: #2c3e50; /* สีพื้นหลังของหัวตาราง */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 12px;
+}
+
+/* การจัดสไตล์ให้กับเซลล์ข้อมูล */
+.ant-table-tbody > tr > td {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 12px;
+}
+
+/* เปลี่ยนสีเมื่อ hover ที่แถวในตาราง */
+.ant-table-row:hover {
+  background-color: #e9f7f7;
+}
+
+/* การเพิ่มการแสดงผลขณะ hover แถว */
+.request-row {
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* เพิ่มการตกแต่ง pagination */
+.ant-pagination-prev,
+.ant-pagination-next {
+  border-radius: 50%;
+  background-color: #1D9D74;
+  color: white;
+  border: none;
+}
+
+.ant-pagination-item {
+  border-radius: 5px;
+}
+
+.ant-pagination-item-active {
+  background-color: #1D9D74;
+  border-color: #1D9D74;
+  color: white;
+}
+
+/* การตกแต่งปุ่มค้นหา */
+.ant-input {
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับขนาดปุ่มพิมพ์ */
+.ant-btn-primary {
+  background-color: #1D9D74;
+  border-color: #1D9D74;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* สีเมื่อ hover ที่ปุ่ม */
+.ant-btn-primary:hover {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+/* ปรับสไตล์ของปุ่มพิมพ์เมื่อ hover */
+.ant-btn-primary:focus,
+.ant-btn-primary:active {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+
+/* การปรับสไตล์ที่ใช้งานบนอุปกรณ์ขนาดเล็ก */
+@media (max-width: 767px) {
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-input {
+    width: 100%;
+  }
+
+  /* ปรับขนาดปุ่ม */
+  .ant-btn-primary {
+    width: 100%;
+  }
+}

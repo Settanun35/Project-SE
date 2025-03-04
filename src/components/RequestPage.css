@@ -1,0 +1,140 @@
+/* Enhancing the table row hover effect */
+.table-row:hover {
+  background-color: #e3f2fd;
+  transition: background-color 0.3s ease;
+}
+
+/* Table header styling */
+.ant-table-thead > tr > th {
+  background-color: #1976d2; /* Deep blue background */
+  color: #fff; /* White text */
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Table body cell styling */
+.ant-table-tbody > tr > td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px;
+  font-size: 14px;
+  color: #555; /* Subtle text color */
+}
+
+/* Hover effect for table rows */
+.ant-table-tbody > tr:hover {
+  background-color: #f5f5f5; /* Light gray hover effect */
+}
+
+/* Styling for the search input */
+input[type="text"] {
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #1976d2;
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  border-color: #1565c0;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling */
+.btn {
+  border-radius: 25px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+/* Modal confirmation button styling */
+.ant-btn-danger {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.ant-btn-danger:hover {
+  background-color: #c62828;
+}
+
+/* Container and page-wide styling */
+.container-fluid.mt-4 {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table wrapper styling */
+.ant-table-wrapper {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Pagination styling */
+.ant-table-pagination {
+  text-align: center;
+  padding-top: 15px;
+  background-color: #e1f5fe;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Table row styling */
+.ant-table-tbody > tr {
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for buttons in the table */
+.ant-btn-primary {
+  background-color: #1976d2;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 12px;
+}
+
+.ant-btn-primary:hover {
+  background-color: #1565c0;
+  border-color: #1565c0;
+}
+
+/* Styling for delete button */
+.ant-btn-danger {
+  background-color: #d32f2f;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 12px;
+}
+
+.ant-btn-danger:hover {
+  background-color: #c62828;
+  border-color: #c62828;
+}
+
+/* Responsive table styling */
+@media (max-width: 768px) {
+  .ant-table-thead > tr > th {
+    font-size: 12px;
+  }
+
+  .ant-table-tbody > tr > td {
+    font-size: 12px;
+  }
+
+  /* Adjust search bar */
+  input[type="text"] {
+    width: 100%;
+  }
+}

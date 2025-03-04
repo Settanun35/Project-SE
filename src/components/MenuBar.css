@@ -1,0 +1,169 @@
+/* Sidebar */
+.ant-layout-sider {
+  width: 280px; /* Wider Sidebar */
+  background: #001529;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 64px;
+  left: 0;
+  height: calc(100vh - 64px);
+  z-index: 500;
+  transition: all 0.3s ease-in-out;
+  padding: 20px 15px;
+  overflow-y: auto;
+  border-right: 1px solid #2C3E50;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Collapsed Sidebar */
+.ant-layout-sider.collapsed {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* User Profile */
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-bottom: 1px solid #2C3E50;
+}
+
+.user-profile .ant-avatar {
+  background-color: #27AE60;
+  font-size: 2rem;
+  border: 3px solid #2C3E50; /* Avatar border for a clean look */
+}
+
+.user-profile h6 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 10px 0;
+  font-weight: 600; /* Make username bolder */
+}
+
+.user-profile p {
+  font-size: 1.1rem;
+  color: #BDC3C7;
+  font-weight: 500; /* Add slight weight to role text */
+}
+
+/* Sidebar Menu */
+.ant-menu-item {
+  font-size: 1.2rem;
+  padding: 15px 20px !important;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.ant-menu-item .anticon {
+  font-size: 1.5rem !important;
+  margin-right: 10px; /* Spacing between icon and text */
+}
+
+.ant-menu-item:hover {
+  background-color: #388E3C;
+  color: #fff !important;
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.ant-menu-item-selected {
+  background-color: #0D47A1 !important;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.ant-menu-submenu-title {
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.ant-menu-submenu .ant-menu-item {
+  font-size: 1.1rem;
+  padding-left: 30px;
+}
+
+.ant-menu-submenu-title:hover {
+  background-color: #388E3C; /* Hover effect for submenu title */
+}
+
+/* Buttons */
+button.ant-btn-primary {
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  background-color: #27AE60; /* Green button color */
+}
+
+button.ant-btn-primary:hover {
+  background-color: #2C8C46; /* Slightly lighter green on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+button.ant-btn-primary:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on active */
+}
+
+/* Sidebar Toggle Button */
+button.ant-btn-text {
+  color: #fff;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+button.ant-btn-text:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+.ant-layout-header {
+  background-color: #2E7D32;
+  padding: 0 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.ant-layout-header .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+/* Layout adjustment for header */
+.ant-layout {
+  margin-top: 64px; /* Header space */
+}
+
+/* Active Sidebar Menu on Hover */
+.ant-menu-item-selected:hover {
+  background-color: #0D47A1 !important;
+  color: #FFF !important;
+  transform: scale(1.05); /* Scale effect when selected */
+}
+
+/* Adjust header text style */
+.ant-layout-header .ant-layout-header {
+  font-size: 1.4rem; /* Make header title slightly larger */
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  flex: 1;
+}
